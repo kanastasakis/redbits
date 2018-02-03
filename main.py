@@ -5,6 +5,7 @@ import tkMessageBox
 from PIL import Image, ImageTk
 import redbits
 
+# TODO: Add save capability
 class Application(tk.Frame):
     def browse_files(self):
         try:
@@ -29,6 +30,7 @@ class Application(tk.Frame):
             # Release loaded image from memory
             im.close()
             # Display the image
+            # TODO: Investigate possible memory leak when updating panel image
             tkimage = ImageTk.PhotoImage(processed_image)
             self.panel.configure(image = tkimage)
             self.panel.image = tkimage

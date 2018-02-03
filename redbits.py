@@ -1,7 +1,8 @@
 from math import ceil
 from PIL import Image, ImageDraw, ImageColor
 
-
+# TODO: Allow user to select output size
+# TODO: Allow User to select box density of output image
 class Redbits():
     def __init__(self):
         pass
